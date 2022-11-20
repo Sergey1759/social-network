@@ -6,12 +6,22 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-
 var app = express();
-
 // view engine setup
+const hbs = require('hbs');
+hbs.registerPartials(__dirname + '/views/partials');
+
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
+
+const sassMiddleware = require('node-sass-middleware')
+app.use(
+  sassMiddleware({
+      src: __dirname + '/public/sass', //where the sass files are 
+      dest: __dirname + '/public', //where css should go
+      debug: true // obvious
+  })
+);
 
 app.use(logger('dev'));
 app.use(express.json());
