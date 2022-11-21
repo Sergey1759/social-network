@@ -1,0 +1,85 @@
+.all_page {
+  background: red;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/images/wallpapers.jpg");
+  background-position: center;
+  background-size: cover;
+  filter: blur(3px); }
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  background-color: #222222;
+  border: 1px solid #3b3b3b;
+  border-radius: 20px;
+  font-family: 'Lato';
+  padding: 10px;
+  box-sizing: border-box;
+  transition: all 0.5s; }
+  .container .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #e1e3e6;
+    margin-top: 10px;
+    margin-bottom: 30px; }
+    .container .header img {
+      width: 200px; }
+  .container .field {
+    font-family: 'Lato';
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Lato'; }
+    .container .field label {
+      font-size: 14px;
+      color: #9a9a9a; }
+    .container .field .error_input {
+      border: 1px solid #ca0914; }
+    .container .field input {
+      background-color: #222222;
+      border: 1px solid #3b3b3b;
+      color: #e1e3e6;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border-radius: 8px;
+      font-family: 'Lato'; }
+  .container .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px; }
+    .container .buttons .btn {
+      padding: 7px 25px 7px 25px;
+      border-radius: 10px;
+      cursor: pointer; }
+    .container .buttons .log_in {
+      background-color: #e1e3e6;
+      color: #222222; }
+    .container .buttons .sign_in {
+      background-color: #4bb34b;
+      color: #e1e3e6; }
+  .container .info {
+    color: #e1e3e6;
+    font-family: 'Lato';
+    margin-bottom: 20px; }
+    .container .info a {
+      color: #4bb34b;
+      text-decoration: none; }
+  .container .errors {
+    margin-top: 20px;
+    font-family: 'Lato';
+    color: #ca0914; }

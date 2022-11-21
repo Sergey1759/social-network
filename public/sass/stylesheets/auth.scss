@@ -1,0 +1,105 @@
+$background-color: #222222;
+$base-color: #3b3b3b;
+$base-color-text: #e1e3e6;
+
+.all_page{
+    background: red;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/images/wallpapers.jpg');
+    background-position: center;
+    background-size: cover;
+    filter: blur(3px);
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 320px;
+    background-color: $background-color;
+    border: 1px solid $base-color;
+    border-radius: 20px;
+    font-family: 'Lato';
+    padding: 10px;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: $base-color-text;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        img{
+            width: 200px;
+        }
+    }
+    
+    .field{
+        font-family: 'Lato';
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: 'Lato';
+        label{
+            font-size: 14px;
+            color: #9a9a9a;
+        }
+        .error_input{
+            border: 1px solid #ca0914;
+        }
+        input{
+            background-color: $background-color;
+            border: 1px solid $base-color;
+            color: $base-color-text;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            border-radius: 8px;
+            font-family: 'Lato';
+        }
+    }
+    .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        .btn{
+            padding: 7px 25px 7px 25px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .log_in{
+            background-color: $base-color-text;
+            color: $background-color;
+        }
+        .sign_in{
+            background-color: #4bb34b;
+            color: $base-color-text;
+        }
+    }
+    .info{
+        color: $base-color-text;
+        font-family: 'Lato';
+        margin-bottom: 20px;
+        a{
+            color: #4bb34b;
+            text-decoration: none;
+        }
+    }
+    .errors{
+        margin-top: 20px;
+        font-family: 'Lato';
+        color: #ca0914;
+    }
+    
+}
