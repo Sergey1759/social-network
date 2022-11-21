@@ -120,7 +120,6 @@
     }
     #container{
       display: none;
-      transition: all 1s;
     }
     nav .container{
       flex-direction: column;

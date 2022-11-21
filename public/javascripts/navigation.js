@@ -11,14 +11,17 @@ search_field.addEventListener('focusout', ()=>{
 
 let toggle = false;
 menu.addEventListener('click', ()=>{
+    const navigation = document.querySelector('.nav');
+    const container = document.querySelector('#container');
+    const menuImage = document.querySelector('.menu img');
     if(!toggle){
-        document.querySelector('.nav').classList.add('nav_width930');
-        document.querySelector('#container').style.display = 'flex';
-        document.querySelector('.menu img').src = '/images/close_menu.png'
+        navigation.classList.add('nav_width930');
+        container.style.display = 'flex';
+        menuImage.src = '/images/close_menu.png'
     } else{
-        document.querySelector('.nav').classList.remove('nav_width930');
-        document.querySelector('#container').style.display = 'none';
-        document.querySelector('.menu img').src = '/images/menu-50.png'
+        navigation.classList.remove('nav_width930');
+        container.style.display = 'none';
+        menuImage.src = '/images/menu-50.png'
     }
     toggle = !toggle;
 });
