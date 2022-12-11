@@ -353,3 +353,26 @@ $base-color-text: #e1e3e6;
         }
     }
 }
+
+@media only screen and (max-width: 930px) {
+    .row{
+        flex-flow: column-reverse;
+        .left, .right{
+            width: 100%;
+        }
+        .friend_container{
+            gap: 15px 0px;
+            position: relative;
+            justify-content: space-between;
+            div{
+                flex: 1 0 auto;
+            }
+            .friend_item{
+                flex-basis: 25%;
+                
+                // max-width: none;
+                // flex: none;
+            }
+        }
+    }
+}

@@ -22,7 +22,8 @@
   font-family: 'Lato';
   padding: 10px;
   box-sizing: border-box;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  font-family: 'Lato'; }
   .container .header {
     display: flex;
     align-items: center;

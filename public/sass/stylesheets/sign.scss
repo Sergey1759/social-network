@@ -1,0 +1,76 @@
+$background-color: #222222;
+$base-color: #3b3b3b;
+$base-color-text: #e1e3e6;
+
+.full-screen{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/images/wallpapers.jpg');
+    background-position: center;
+    background-size: cover;
+    filter: blur(3px);
+}
+.container{
+    width: 300px;
+    // height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8, auto);
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: $background-color;
+    border: 1px solid $base-color;
+    border-radius: 20px;
+    font-family: 'Lato';
+    color: $base-color-text;
+    .logo{
+        grid-column: 1 / span 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    input{
+        grid-column: 1 / span 2;
+        margin: 10px 0 10px 0;
+        background-color: #222222;
+        border: 1px solid #3b3b3b;
+        color: #e1e3e6;
+        border-radius: 8px;
+        padding: 5px 10px 5px 10px;
+    }
+    .errors{
+        grid-column: 1 / span 2;
+        margin: 10px 0 10px 0;
+    }
+    .btn{
+        margin: 10px 0 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 15px;
+        background-color: aqua;
+        box-sizing: border-box;
+        border: 1px solid #3b3b3b;
+        border-radius: 8px;
+        &.login{
+            background-color: $base-color-text;
+            color: $background-color;
+            margin-right: 15px;
+        }
+        &.sign-up{
+            border: 1px solid $base-color-text;
+            background-color: #4bb34b;
+            margin-left: 15px;
+        }
+    }
+    
+    
+}
